@@ -1,0 +1,23 @@
+Package: CountNA
+Title: Count Missing Values for all Columns by Group
+Version: 0.1.0
+Authors@R: 
+    person(given = "Sarah", 
+            family = "Masri", 
+            role = c("aut", "cre"),
+            email = "sarah.masri@student.ubc.ca")
+Description: Given a data frame `data` and a column `group`, 
+    `count_all_missing_by_group()` creates a new data frame with one row 
+    per level of `group`. The first column of the output data frame contains the 
+    levels of `group`, and the rest of the columns contain the number of missing values for
+    all columns in `data` except `group`.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    dplyr,
+    magrittr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
